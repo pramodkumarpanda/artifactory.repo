@@ -4,7 +4,8 @@ mv bintray-jfrog-artifactory-rpms.repo /etc/yum.repos.d/
 yum install jfrog-artifactory-oss
 systemctl start artifactory
 systemctl status artifactory
-firewall-cmd --add-port=8081/tcp
+systemctl status firewalld(if ruuning execute next line)
+	firewall-cmd --add-port=8081/tcp
 http://192.168.122.x:8081/
 	username: admin
 	password: password
