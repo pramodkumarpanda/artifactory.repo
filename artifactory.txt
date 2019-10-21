@@ -22,7 +22,7 @@ go to jenkins:
 1> enable Artifactory plugin
 2> configure system
 	add details of artifactory
-
+https://www.jfrog.com/confluence/display/RTF/Declarative+Pipeline+Syntax
 pipeline{
     agent {
      node  'slave1'
