@@ -1,7 +1,8 @@
-wget https://bintray.com/jfrog/artifactory-rpms/rpm -O bintray-jfrog-artifactory-rpms.rep
+ yum install java-1.8.0-openjdk-devel -y
+wget https://bintray.com/jfrog/artifactory-rpms/rpm -O bintray-jfrog-artifactory-rpms.repo
 mv bintray-jfrog-artifactory-rpms.repo /etc/yum.repos.d/
 yum install jfrog-artifactory-oss
-ystemctl start artifactory
+systemctl start artifactory
 systemctl status artifactory
 firewall-cmd --add-port=8081/tcp
 http://192.168.122.x:8081/
